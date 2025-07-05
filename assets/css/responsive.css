@@ -1,0 +1,343 @@
+/* responsive.css */
+
+/* Common responsive adjustments */
+@media (max-width: 1200px) {
+    .hero .content-block {
+        padding-left: 70px;
+    }
+    
+    .features .content {
+        width: 45%;
+    }
+    
+    .features-2nd .content {
+        width: 45%;
+    }
+}
+
+/* Tablet and small desktop screens (768px - 1024px) */
+@media (max-width: 1024px) {
+    /* Header adjustments */
+    .header .body {
+        padding: 20px 0;
+    }
+    
+    .nav a {
+        padding: 8px 15px;
+    }
+    
+    .header .action {
+        margin-left: 30px;
+    }
+    
+    /* Hero section */
+    .hero .body {
+        flex-direction: column;
+    }
+    
+    .hero .media-block,
+    .hero .content-block {
+        width: 100%;
+    }
+    
+    .hero .media-block {
+        margin-bottom: 30px;
+    }
+    
+    .hero .content-block {
+        padding: 0;
+        text-align: center;
+    }
+    
+    .hero-summary {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: -50px;
+    }
+    
+    .hero .cta-group {
+        justify-content: center;
+    }
+    
+    .hero .stats {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    /* Popular courses */
+    .popular-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .popular-top .desc {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .course-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .course-item {
+        min-width: 300px;
+        max-width: 350px;
+        margin-bottom: 30px;
+    }
+    
+    /* Feedback */
+    .feedback-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .feedback-item .content {
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .feedback-item blockquote {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .feedback-item .dots {
+        justify-content: center;
+    }
+    
+    /* Features */
+    .features .body {
+        flex-direction: column;
+    }
+    
+    .features .images {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    .features .content {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .features-2nd .body {
+        flex-direction: column;
+    }
+    
+    .features-2nd .images {
+        order: -1;
+    }
+    
+    .features-2nd .content {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    
+    /* Blog */
+    .blog-top {
+        text-align: center;
+    }
+    
+    .blog-top .desc {
+        width: 100%;
+    }
+    
+    .blog-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .blog .item {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 60px 30px 0;
+    }
+    
+    .footer .row {
+        flex-wrap: wrap;
+    }
+    
+    .footer .row .column {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    
+    .footer .row .column:first-child {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .footer .desc {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .footer .socials {
+        justify-content: center;
+    }
+    
+    .footer .title {
+        padding-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .footer .list {
+        text-align: center;
+    }
+}
+
+/* Mobile screens (up to 767px) */
+@media (max-width: 767px) {
+    /* Base adjustments */
+    html {
+        font-size: 55%;
+    }
+    
+    .heading.lv1 {
+        font-size: 4.5rem;
+    }
+    
+    .heading.lv2 {
+        font-size: 3rem;
+    }
+    
+    /* Header */
+    .header.fixed {
+        top: -15px;
+    }
+    
+    .nav {
+        display: none; /* Consider adding a mobile menu toggle */
+    }
+    
+    .header .action {
+        margin-left: auto;
+    }
+    
+    /* Hero */
+    .hero {
+        padding: 30px 0 50px;
+    }
+    
+    .hero-summary {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .hero .cta-group {
+        flex-direction: column;
+    }
+    
+    .hero .watch-video {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    /* Popular courses */
+    .course-item {
+        min-width: 100%;
+    }
+    
+    /* Feedback */
+    .feedback {
+        padding: 60px 0;
+    }
+    
+    .feedback-item .avatar {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .feedback-item .info .title {
+        font-size: 2rem;
+    }
+    
+    .feedback-item blockquote {
+        font-size: 2rem;
+    }
+    
+    /* Features */
+    .features {
+        margin-top: 60px;
+        padding: 40px 0;
+    }
+    
+    .features .images {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .features img.lower {
+        margin-top: 20px;
+    }
+    
+    .features-2nd .images img {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Blog */
+    .blog {
+        margin-top: 60px;
+        padding: 60px 0;
+    }
+    
+    .blog .item {
+        width: 100%;
+    }
+    
+    /* Footer */
+    .footer .row .column {
+        width: 100%;
+    }
+}
+
+/* Very small mobile screens (up to 480px) */
+@media (max-width: 480px) {
+    .heading.lv1 {
+        font-size: 3.8rem;
+    }
+    
+    .heading.lv2 {
+        font-size: 2.6rem;
+    }
+    
+    .hero .stats strong {
+        font-size: 3.5rem;
+    }
+    
+    .feedback-item blockquote {
+        font-size: 1.8rem;
+    }
+    
+    .footer {
+        padding: 40px 15px 0;
+    }
+}
+
+/* Landscape orientation for mobile */
+@media (max-height: 480px) and (orientation: landscape) {
+    .hero .media-block {
+        width: 50%;
+    }
+    
+    .hero .content-block {
+        width: 50%;
+        padding-left: 30px;
+    }
+    
+    .hero-summary {
+        bottom: 20px;
+    }
+}
